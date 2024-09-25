@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delivery Registration</title>
+<style>
+   body
+    {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+    }
+
+    .card {
+        width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        width: calc(100% - 12px);
+        margin: 8px 0;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .avatar {
+        display: block;
+        margin: 0 auto 20px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .left-image,
+    .right-image {
+        display: block;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .left-image {
+        left: 0;
+    }
+
+    .right-image {
+        right: 0;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="del1.webp" alt="Left Image" class="left-image">
+    <div class="card">
+        <h1>Delivery Boy Registration</h1>
+        <form action="#" method="post">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="text" id="phone" name="phone" required><br>
+            <label for="phone">Password</label><br>
+            <input type="text" id="phone" name="password" required><br>
+            <label for="address">Address</label><br>
+            <textarea id="address" name="address" required></textarea><br>
+            <label for="vehicle">Vehicle Type</label><br>
+            <select id="vehicle" name="vehicle" required>
+                <option value="">Select Vehicle Type</option>
+                <option value="car">Car</option>
+                <option value="motorcycle">Motorcycle</option>
+                <option value="bicycle">Bicycle</option>
+            </select><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <img src="del2.webp" alt="Right Image" class="right-image">
+</div>
+</body>
+</html>

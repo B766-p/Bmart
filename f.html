@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload Failed</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+  }
+
+  .card {
+    width: 300px;
+    background-color: #e65e54; /* Red background color */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added to position the cross icon */
+  }
+
+  .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .card-content {
+    text-align: center;
+  }
+
+  .cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    fill: #fff; /* White color for the cross icon */
+  }
+
+  .button {
+    background-color: #fff;
+    color: #e65e54;
+    border: 1px solid #e65e54;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #e65e54;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="50" height="50"><circle class="cross__circle" cx="26" cy="26" r="25" fill="none" stroke="#fff" stroke-width="2"/><path class="cross__cross" fill="none" stroke="#fff" stroke-width="2" d="M16 16, 36 36 M36 16, 16 36"/></svg>
+  <div class="card-content">
+    <span class="card-title">Upload Failed!</span>
+    <p>There was an error uploading your file.</p>
+    <a href="ADDNPR.jsp" class="button">Re-upload</a>
+  </div>
+</div>
+</body>
+</html>
